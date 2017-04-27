@@ -19,9 +19,11 @@
 	<script>
 		$(document).ready(function(){
 			$('#responsive-menu').mobileMenu();
+			$( document ).tooltip();
 			$( "input[type='radio']" ).checkboxradio();
 			$( "input[type='checkbox']" ).checkboxradio();
 			$( "#companysize" ).selectmenu();
+			$( "#hearaboutus" ).selectmenu();
 			$("#dialog").dialog({
 			autoOpen: false,
 		});
@@ -74,6 +76,7 @@
 			    <label for="vRetain"><input type="checkbox" name="product" value="vRetain" id="vRetain">vRetain 1.0</label>
 			    
 			    <br>
+				<br>
 			    What is your current infrastructure?<br>
 			    <label for="Mac"><input type="radio" name="infrastructure" value="Mac" id="Mac">Mac</label>
 			    <label for="Linux"><input type="radio" name="infrastructure" value="Linux" id="Linux">Linux</label>
@@ -81,6 +84,7 @@
 			    <label for="Windows"><input type="radio" name="infrastructure" value="Windows" id="Windows">Windows</label>
 
 			    <br>
+				<br>
 <!--					<label for ="companysize">How many employees do you have?</label>-->
 				How many employees do you have?<br>	
 			    <select name="companysize" id="companysize">
@@ -88,16 +92,21 @@
                     <option value="11-100">11-100</option>
                     <option value="101-1000">101-1000</option>
                     <option value="More than 1000">More than 1000</option>
-		        </select><br>
+		        </select>
+				<br>
+				<br>
                 
-			    How did you hear about us?
-			    <select name="hearaboutus" multiple="" size="5">
-                    <option value="Magazine Ad">Magazine Ad</option>
+			    How did you hear about us?<br>
+			    <select name="hearaboutus" id="hearaboutus" multiple="" size="5">
+					<option selected="selected">Magazine Ad</option>
+<!--                    <option value="Magazine Ad">Magazine Ad</option>-->
                     <option value="Radio Ad">Radio Ad</option>
                     <option value="TV Ad">TV Ad</option>
                     <option value="Word of Mouth">Word of Mouth</option>
                     <option value="Other">Other</option>
 		        </select>
+				<br>
+				<br>
                 
 			    Questions or comments for our sales representatives?
 			    <textarea name="questions" size="30" rows="5"></textarea>

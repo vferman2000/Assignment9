@@ -18,11 +18,9 @@
 <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script>
-		$(document).ready(function(){
-			$('#responsive-menu').mobileMenu();
-
+	$(document).ready(function(){
+	$('#responsive-menu').mobileMenu();
     $( document ).tooltip();
-        
     $( "#tabs" ).tabs({collapsible: true, active: false });
     $("#tabs").css({"width":"310px", "padding":"0px", "margin":"0px"});
     $("#tabs a").css({"padding":"5px", "margin":"0px"});
@@ -30,7 +28,7 @@
     $( "#accordion" ).accordion({collapsible: true, active: false});
         
     $("[title]").tooltip({tooltipClass:"customTooltip"});
-    $(".customTooltip").css({"width":"200px"});
+    
         
     } );
     
@@ -46,11 +44,11 @@
 		
 		<nav class="thirteen columns">
 			<ul id="responsive-menu">
-				<li><a href="index.html" title="Learn more about Vecta Corp. approach to business">Home</a></li>
-				<li><a href="aboutus.html" title="We offer innovative approaches and advanced methologies">About Us</a></li>
-				<li><a href="solutions.html" title="Business solutions to tackle your needs">Solutions</a></li>
-				<li><a href="support.html" title="Find the latest technical resources">Support</a></li>
-				<li><a href="contactus.html" title="We are here to help">Contact Us</a></li>
+				<li><a href="index.html" class="customTooltip" title="Learn more about Vecta Corp. approach to business">Home</a></li>
+				<li><a href="aboutus.html" class="customTooltip" title="We offer innovative approaches and advanced methologies">About Us</a></li>
+				<li><a href="solutions.html" class="customTooltip" title="Business solutions to tackle your needs">Solutions</a></li>
+				<li><a href="support.html" class="customTooltip" title="Find the latest technical resources">Support</a></li>
+				<li><a href="contactus.html" class="customTooltip" title="We are here to help">Contact Us</a></li>
 			</ul>
 		</nav>
 		

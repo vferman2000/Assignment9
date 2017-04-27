@@ -17,6 +17,7 @@
 	<script>
 		$(document).ready(function(){
 			$('#responsive-menu').mobileMenu();
+			$( document ).tooltip();
 		});
 	</script>
 </head>
@@ -28,11 +29,11 @@
 		
 		<nav class="thirteen columns">
 			<ul id="responsive-menu">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="solutions.html">Solutions</a></li>
-				<li><a href="support.html">Support</a></li>
-				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="index.html" class="customTooltip" title="Learn more about Vecta Corp. approach to business">Home</a></li>
+				<li><a href="aboutus.html" class="customTooltip" title="We offer innovative approaches and advanced methologies">About Us</a></li>
+				<li><a href="solutions.html" class="customTooltip" title="Business solutions to tackle your needs">Solutions</a></li>
+				<li><a href="support.html" class="customTooltip" title="Find the latest technical resources">Support</a></li>
+				<li><a href="contactus.html" class="customTooltip" title="We are here to help">Contact Us</a></li>
 			</ul>
 		</nav>
 		
